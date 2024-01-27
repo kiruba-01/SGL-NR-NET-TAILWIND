@@ -5,9 +5,49 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tailwind-hr-net</title>
     <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <link href="input sticky/stick.css" rel="stylesheet">
 </head>
 <body>
     <body>
+
+        <div> <a class="pop-up"><img src="images/pic-1.png"></a>
+            <div class="addtion">
+              <div class="hed1">
+              <h3>Leave a message</h3></div>
+              <div class="input-01">
+                  <input type="text" placeholder="Enter your name"></input>
+              </div>
+              <div class="input-02">
+                  <input type="text" placeholder="Enter your email address"></input>
+              </div>
+              <div class="input-03">
+                  <input type="text" placeholder="Type your message here and click Submit"></input>
+              </div>
+              <div><button class="ra-one">Submit</button></div>
+              </div>
+              <script>
+              var acc = document.getElementsByClassName("pop-up");
+                var i;
+                
+                for (i = 0; i < acc.length; i++) {
+                  acc[i].addEventListener("click", function() {
+                   
+                    this.classList.toggle("active");
+                
+                    
+                    var addtion = this.nextElementSibling;
+                    if (addtion.style.display === "block") {
+                      addtion.style.display = "none";
+                    } else {
+                      addtion.style.display = "block";
+                    }
+                  });
+                }
+                </script>
+            </div>
+            
+              
+
         <section class="rounded-2xl p-5">
         <div class="container  mx-auto">
             <div class="flex py-2">
@@ -34,7 +74,7 @@
                     </a>
                     
                     <div class="hidden" id="mobliemenu">
-                <ul class="w-full  items-center justify-start flex flex-col font-medium p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
+                <ul class="w-full items-center justify-start flex flex-col font-medium p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
                     <div class="">
                     <div class="hover:text-blue-500">search</div>
                     <div class="hover:text-blue-500">solutions</div>
@@ -424,7 +464,6 @@
 
         </div>
     </section>
-
 
 </body>
 </html>

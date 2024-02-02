@@ -9,46 +9,7 @@
 </head>
 <body>
     <body>
-<!-- 
-        <div> <a class="pop-up"><img src="images/pic-1.png"></a>
-            <div class="addtion">
-              <div class="hed1">
-              <h3>Leave a message</h3></div>
-              <div class="input-01">
-                  <input type="text" placeholder="Enter your name"></input>
-              </div>
-              <div class="input-02">
-                  <input type="text" placeholder="Enter your email address"></input>
-              </div>
-              <div class="input-03">
-                  <input type="text" placeholder="Type your message here and click Submit"></input>
-              </div>
-              <div><button class="ra-one">Submit</button></div>
-              </div>
-              <script>
-              var acc = document.getElementsByClassName("pop-up");
-                var i;
-                
-                for (i = 0; i < acc.length; i++) {
-                  acc[i].addEventListener("click", function() {
-                   
-                    this.classList.toggle("active");
-                
-                    
-                    var addtion = this.nextElementSibling;
-                    if (addtion.style.display === "block") {
-                      addtion.style.display = "none";
-                    } else {
-                      addtion.style.display = "block";
-                    }
-                  });
-                }
-                </script>
-            </div> -->
-            
-              
-
-        <section class="rounded-2xl p-5">
+         <section class="rounded-2xl p-5">
         <div class="container  mx-auto">
             <div class="flex py-2">
             <a href="#"> <img class="w-13 h-11" src="images/hrleads-logo.svg"></a>
@@ -465,66 +426,69 @@
         </div>
     </section>
  
+ 
 
+ <div class="w-96"> 
 
+    <div class="fixed w-16 h-16 bg-blue-600 rounded-full right-3 bottom-3">
 
-    <section>  
-        <div class="fixed w-16 h-16 bg-blue-600 rounded-full mt-10 right-0 bottom-0">
-            <a type="button" class="l:hidden" onclick="popupmenu()">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-8 h-8 text-white mx-4 my-4">
-                <path d="M4.913 2.658c2.075-.27 4.19-.408 6.337-.408 2.147 0 4.262.139 6.337.408 1.922.25 3.291 1.861 3.405 3.727a4.403 4.403 0 0 0-1.032-.211 50.89 50.89 0 0 0-8.42 0c-2.358.196-4.04 2.19-4.04 4.434v4.286a4.47 4.47 0 0 0 2.433 3.984L7.28 21.53A.75.75 0 0 1 6 21v-4.03a48.527 48.527 0 0 1-1.087-.128C2.905 16.58 1.5 14.833 1.5 12.862V6.638c0-1.97 1.405-3.718 3.413-3.979Z" />
-                <path d="M15.75 7.5c-1.376 0-2.739.057-4.086.169C10.124 7.797 9 9.103 9 10.609v4.285c0 1.507 1.128 2.814 2.67 2.94 1.243.102 2.5.157 3.768.165l2.782 2.781a.75.75 0 0 0 1.28-.53v-2.39l.33-.026c1.542-.125 2.67-1.433 2.67-2.94v-4.286c0-1.505-1.125-2.811-2.664-2.94A49.392 49.392 0 0 0 15.75 7.5Z" />
-              </svg>
-              </a>
-              </div>
+        <a type="button" class="l:hidden" onclick="popupmenu()">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-8 h-8 text-white mx-4 my-4">
+            <path d="M4.913 2.658c2.075-.27 4.19-.408 6.337-.408 2.147 0 4.262.139 6.337.408 1.922.25 3.291 1.861 3.405 3.727a4.403 4.403 0 0 0-1.032-.211 50.89 50.89 0 0 0-8.42 0c-2.358.196-4.04 2.19-4.04 4.434v4.286a4.47 4.47 0 0 0 2.433 3.984L7.28 21.53A.75.75 0 0 1 6 21v-4.03a48.527 48.527 0 0 1-1.087-.128C2.905 16.58 1.5 14.833 1.5 12.862V6.638c0-1.97 1.405-3.718 3.413-3.979Z" />
+            <path d="M15.75 7.5c-1.376 0-2.739.057-4.086.169C10.124 7.797 9 9.103 9 10.609v4.285c0 1.507 1.128 2.814 2.67 2.94 1.243.102 2.5.157 3.768.165l2.782 2.781a.75.75 0 0 0 1.28-.53v-2.39l.33-.026c1.542-.125 2.67-1.433 2.67-2.94v-4.286c0-1.505-1.125-2.811-2.664-2.94A49.392 49.392 0 0 0 15.75 7.5Z" />
+          </svg>
+          </a>
+          </div>
 
-              <div class=" bg-blue-500 rounded-full ml-96 w-14 h-14 mb-2" onclick="closeMenu()" id="close-menu" style="display: none"> 
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-10 h-10 mx-3 pt-5 shadow-xl text-gray-100 bg-none">
+        <div class="" id="up-menu" style="display: none">
+           
+            <div class="w-2/6 flex flex-col shadow-md bg-white fixed right-0 bottom-0 ">
+        
+                <div class="" onclick="closeMenu()" id="close-menu" style="display: none"> 
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class=" mx-1 pt-2 shadow-xl text-gray-100 bg-blue-500 rounded-full  w-11 h-11 mb-1 ml-auto">
                     <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
                   </svg>
             </div>
 
-            <div class="hidden" id="up-menu" style="display: none">
-                <div class="ml-10 mt-10 flex flex-col w-2/6 shadow-md inset-96">
-                 <h1 class="text-2xl text-center bg-blue-500 w-full h-24 py-5 text-gray-100 font-bold rounded-xl rounded-b-3xl cursor-move">Leave a message</h1>
-                 <input class="m-5 h-10 rounded-xl bg-gray-100 shadow outline-none px-2 font-extralight" placeholder="Enter your name" >
-                 <input class="m-5 h-10 rounded-xl bg-gray-100 shadow outline-none px-2 font-extralight" placeholder="Enter your email address">
-                  <textarea class="m-5 outline-none bg-gray-100  h-36 rounded-xl px-3 font-extralight shadow" placeholder="Type your message here and click Submit"></textarea>
-                  <button class="text-gray-300 text-1xl ml-64 font-medium mb-5">Submit</button>
-                </div>
+             <h1 class="text-2xl text-center bg-blue-500 w-full h-24 py-5 text-gray-100 font-bold rounded-xl rounded-b-3xl cursor-move">Leave a message</h1>
+             <input class="m-5 h-10 rounded-xl bg-gray-100 shadow outline-none px-2 font-extralight" placeholder="Enter your name" >
+             <input class="m-5 h-10 rounded-xl bg-gray-100 shadow outline-none px-2 font-extralight" placeholder="Enter your email address">
+              <textarea class="m-5 outline-none bg-gray-100  h-36 rounded-xl px-3 font-extralight shadow" placeholder="Type your message here and click Submit"></textarea>
+              <button class="text-gray-300 text-1xl ml-auto font-medium mb-">Submit</button>
             </div>
+        </div>
 
-            <script>
-                function popupmenu(){
-                /*var menu = document.getElementById('up-menu');
-                if (menu.classList.contains('hidden')){
-                    menu.classList.remove('hidden');
-                } 
-                else {
-                    menu.classList.add('hidden');
-                }*/
+        <script>
+            function popupmenu(){
+            /*var menu = document.getElementById('up-menu');
+            if (menu.classList.contains('hidden')){ 
+                menu.classList.remove('hidden');
+            } 
+            else {
+                menu.classList.add('hidden');
+            }*/
+            var popupDisplay = document.getElementById("up-menu").style.display;
+            var arrowDisplay = document.getElementById("close-menu").style.display;
+            if (popupDisplay == 'none' && arrowDisplay =='none') {
+                document.getElementById("up-menu").style.display = "block";
+                document.getElementById("close-menu").style.display = "block";
+            }
+
+
+        }
+        </script>
+        <script>
+            function closeMenu(){
                 var popupDisplay = document.getElementById("up-menu").style.display;
                 var arrowDisplay = document.getElementById("close-menu").style.display;
-                if (popupDisplay == 'none' && arrowDisplay =='none') {
-                    document.getElementById("up-menu").style.display = "block";
-                    document.getElementById("close-menu").style.display = "block";
+                if (popupDisplay == 'block' && arrowDisplay =='block') {
+                    document.getElementById("up-menu").style.display = "none";
+                    document.getElementById("close-menu").style.display = "none";
                 }
-
-
             }
-            </script>
-            <script>
-                function closeMenu(){
-                    var popupDisplay = document.getElementById("up-menu").style.display;
-                    var arrowDisplay = document.getElementById("close-menu").style.display;
-                    if (popupDisplay == 'block' && arrowDisplay =='block') {
-                        document.getElementById("up-menu").style.display = "none";
-                        document.getElementById("close-menu").style.display = "none";
-                    }
-                }
-            </script>
-        </section>
-
+        </script>
+        
+    </div>
 
 </body>
 </html>
